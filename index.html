@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- font awesome cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+    <!-- font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Comic+Relief:wght@400;700&family=Pacifico&family=Playwrite+NZ+Basic:wght@100..400&family=Quicksand:wght@300..700&family=Roboto:ital,wght@0,100..900;1,100..900&family=SUSE+Mono:ital,wght@0,100..800;1,100..800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>AtmosJS</title>
+</head>
+
+<body>
+    <div class="navbar">
+        <h1>AtmosJS</h1>
+        <div class="search">
+            <input type="search" placeholder="Search City...">
+            <button id="searchBtn">Search</button>
+        </div>
+    </div>
+    <div class="temperature-container">
+        <div class="temperature-card">
+            <div class="temperature-unit">
+                <p id="celsius">C</p>
+                <p id="farenheit">F</p>
+            </div>
+            <div class="temperature-row">
+                <div class="temperature">
+                    <p id="current-temperature">13* C</p>
+                    <p>clear</p>
+                    <p id="location">feels like 11* C</p>
+                    <p>Last updated 10 Oct 2026 7:45 Pm</p>
+                </div>
+                <div class="date-time">
+                    <p>7:50 PM</p>
+                    <pre>Mon  |  10 OCT 2026</pre>
+                    <p id="location">Delhi - India</p>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="extras-container">
+        <div class="extras-card-container">
+            <div class="extras-left">
+                <div class="extras-one">
+                    <div class="sunrise-sunset">
+                        <div class="sunrise">
+                            <div class="sunrise-icon">
+                                <i class="fa-regular fa-sun" style="color: rgb(116, 192, 252);"></i>
+                            </div>
+                            <div class="sunrise-text">
+                                <h4>Sunrise</h4>
+                                <p>6:40 AM</p>
+                            </div>
+                        </div>
+                        <div class="sunset">
+                            <div class="sunset-icon">
+                                <i class="fa-regular fa-sun" style="color: rgb(116, 192, 252);"></i>
+                            </div>
+                            <div class="sunset-text">
+                                <h4>Sunset</h4>
+                                <p>7:00 PM</p>
+                            </div>
+
+                        </div>
+                    </div>
+                    <!-- hr line  -->
+                    <hr>
+                    <!-- Wind and UV -->
+                    <div class="high-low">
+                        <div class="high">
+                            <div class="high-icon">
+                                <i class="fa-solid fa-arrow-up" style="color: rgb(116, 192, 252);"></i>
+                            </div>
+                            <div class="high-text">
+                                <h4>High Temperature</h4>
+                                <p>37* C</p>
+                            </div>
+                        </div>
+                        <div class="low">
+                            <div class="low-icon">
+                                <i class="fa-solid fa-arrow-down" style="color: rgb(116, 192, 252);"></i>
+                            </div>
+                            <div class="low-text">
+                                <h4>Low Temperature</h4>
+                                <p>22* C</p>
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+                <div class="extras-two">
+                    <div class="rain">
+                        <div class="rain-icon">
+                            <i class="fa-solid fa-cloud-showers-heavy" style="color: rgb(116, 192, 252);"></i>
+                        </div>
+                        <div class="rain-text">
+                            <h4>Chances of rain</h4>
+                            <p>0%</p>
+                        </div>
+                    </div>
+                    <!-- Snow  -->
+                    <div class="rain">
+                        <div class="rain-icon">
+                            <i class="fa-solid fa-cloud-showers-heavy" style="color: rgb(116, 192, 252);"></i>
+                        </div>
+                        <div class="rain-text">
+                            <h4>Chances of rain</h4>
+                            <p>0%</p>
+                        </div>
+                    </div>
+                    <!-- cloud -->
+                    <div class="cloud">
+                        <div class="cloud-icon">
+                            <i class="fa-solid fa-cloud" style="color: rgb(116, 192, 252);"></i>
+                        </div>
+                        <div class="cloud-text">
+                            <h4>Cloud cover</h4>
+                            <p>0%</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="extras-right">
+                <div class="extras-three">
+                    <div class="humidity-aqi">
+                        <div class="humidity">
+                            <div class="humidity-icon">
+                                <i class="fa-solid fa-droplet" style="color: rgb(116, 192, 252);"></i>
+                            </div>
+                            <div class="humidity-text">
+                                <h4>Humidity</h4>
+                                <p>39%</p>
+                            </div>
+                        </div>
+                        <div class="aqi">
+                            <div class="aqi-icon">
+                                <i class="fa-solid fa-water" style="color: rgb(116, 192, 252);"></i>
+                            </div>
+                            <div class="aqi-text">
+                                <h4>Air Quality</h4>
+                                <p>129</p>
+                                <p>Unhealthy</p>
+                            </div>
+
+                        </div>
+                        <div class="precipitation">
+                            <div class="aqi-icon">
+                                <i class="fa-solid fa-cloud-showers-water" style="color: rgb(116, 192, 252);"></i>
+                            </div>
+                            <div class="aqi-text">
+                                <h4>Precipitation</h4>
+                                <p>0%</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- hr line  -->
+                    <hr style="height: 200px;">
+                    <!-- Wind and UV -->
+                    <div class="wind-uv">
+                        <div class="wind">
+                            <div class="wind-icon">
+                                <i class="fa-solid fa-wind" style="color: rgb(116, 192, 252);"></i>
+                            </div>
+                            <div class="wind-text">
+                                <h4>Wind</h4>
+                                <p>18 KPH</p>
+                            </div>
+                        </div>
+                        <div class="uv">
+                            <div class="uv-icon">
+                                <i class="fa-solid fa-sun" style="color: rgb(116, 192, 252);"></i>
+                            </div>
+                            <div class="uv-text">
+                                <h4>Air Quality</h4>
+                                <p>129</p>
+                                <p>Unhealthy</p>
+                            </div>
+
+                        </div>
+                        <div class="wind-direction">
+                            <div class="wind-direction-icon">
+                                <i class="fa-solid fa-cloud-showers-water" style="color: rgb(116, 192, 252);"></i>
+                            </div>
+                            <div class="wind-direction-text">
+                                <h4>Wind direction</h4>
+                                <p>South</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</body>
+
+</html>

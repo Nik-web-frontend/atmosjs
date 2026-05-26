@@ -1,0 +1,242 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'quicksand';
+
+}
+
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 100px;
+}
+
+.search {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+input[type=search] {
+    font-size: 15px;
+    padding: 5px;
+    width: 300px;
+}
+
+#searchBtn {
+    font-size: 15px;
+    padding: 5px;
+}
+
+
+.temperature-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.temperature-card {
+    /* background-color: lightblue; */
+    /* background-image: url('img/village.jpg'); */
+    background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.4)), url(img/cardImg.jpg);
+    background-size: cover;
+    background-position: 50% 70%;
+    background-repeat: no-repeat;
+    height: 300px;
+    width: 85%;
+    border-radius: 10px;
+    padding: 20px 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    color: white;
+    box-shadow: 0 0 20px 8px gray;
+}
+
+.temperature-row {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.date-time {
+    /* background-color: blue; */
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    justify-content: end;
+    font-size: 20px;
+    gap: 10px;
+}
+
+#current-temperature {
+    font-size: 80px;
+}
+
+#location {
+    font-size: 20px;
+}
+
+.temperature {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.temperature-unit {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    width: 80px;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: rgba(252, 252, 252, 0.171);
+    color: rgb(204, 204, 204);
+}
+
+.temperature-unit:hover {
+    cursor: pointer;
+}
+
+#celsius {
+    color: white;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.extras-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    margin-bottom: 100px;
+    /* background-color: blue; */
+}
+
+.extras-card-container {
+    display: flex;
+    width: 85%;
+    /* background-color: orange; */
+    justify-content: space-between;
+}
+
+.extras-left {
+    /* background-color: red; */
+    height: 300px;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.extras-right {
+    /* background-color: green; */
+    height: 300px;
+    width: 45%;
+}
+
+.extras-one {
+    background-color: aliceblue;
+    height: 70%;
+    padding: 30px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-around;
+    box-shadow: 0 0 20px 8px rgba(128, 128, 128, 0.263);
+    
+}
+
+hr {
+    height: 120px;
+    width: 5px;
+    background-color: rgb(175, 175, 175);
+    border: none;
+    border-radius: 20px;
+    margin: 20px 0;
+}
+
+.extras-two {
+    background-color: aliceblue;
+    height: 25%;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 30px;
+    box-shadow: 0 0 20px 8px rgba(128, 128, 128, 0.263);
+
+}
+
+.humidity,
+.aqi,
+.wind,
+.uv,
+.sunrise,
+.sunset,
+.high,
+.low,
+.precipitation,
+.wind-direction {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+
+    h4 {
+        margin-bottom: 5px;
+    }
+}
+
+.humidity-icon,
+.aqi-icon,
+.wind-icon,
+.uv-icon,
+.sunrise-icon,
+.sunset-icon,
+.high-icon,
+.low-icon,
+.precipitation-icon,
+.wind-direction-icon {
+    font-size: 30px;
+}
+
+.humidity-aqi,
+.wind-uv,
+.sunrise-sunset,
+.high-low {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: start;
+    /* background-color: red; */
+    height: 100%;
+}
+
+.rain,
+.cloud {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.rain-icon,
+.cloud-icon {
+    font-size: 30px;
+}
+
+
+.extras-three {
+    background-color: aliceblue;
+    height: 100%;
+    padding: 30px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    box-shadow: 0 0 20px 8px rgba(128, 128, 128, 0.263);
+}
