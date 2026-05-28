@@ -36,8 +36,7 @@ fahrenheit.addEventListener('click', () => {
 // Fetch Data from API 
 
 async function getWeather(city) {
-    const apiKey = "10e95397e0274c958bb140112262105";
-
+    let apiKey = 'apiKey';
     const response = await fetch(`https://api.weatherapi.com/v1/current.json?key=${apiKey}&q=${city}`)
 
     weatherData = await response.json();
@@ -45,9 +44,13 @@ async function getWeather(city) {
     updateWeatherUI()
 }
 
+//  search button 
+
 searchBtn.addEventListener('click', () => {
     getWeather(searchInp.value);
 })
+
+// Weather UI Dynamic Data
 
 function updateWeatherUI() {
     let dateObj = new Date(weatherData.location.localtime)
